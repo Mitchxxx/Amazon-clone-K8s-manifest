@@ -9,7 +9,7 @@ node {
 
     stage('Update Deployment Manifest') {
         script{
-            cathError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 withCredentials([usernamePassword(credentialsId: 'github-Mitchel', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                     sh "git config user.email megboko@gmail.com"
                     sh "git config user.name Mitchxxx"
