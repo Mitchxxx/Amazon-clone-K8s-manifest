@@ -5,7 +5,7 @@ metadata:
   labels:
     name: amazon-app
 # annotations:
-#  cert-manager.io/issuer: letsencrypt-nginx 
+#  cert-manager.io/issuer: letsencrypt-nginx
 spec:
 #tls:
 #- host:
